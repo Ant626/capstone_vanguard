@@ -11,6 +11,7 @@ export class CustomersService {
   
   private baseURL = "http://localhost:8080/fundingforce/customer"
   private baseURLUsername = "http://localhost:8080/fundingforce/username"
+  private passwordUrl = "http://localhost:8080/fundingforce/updatePassword"
   constructor(private httpclient: HttpClient) { }
 
   getAllCustomers(): Observable<Customer[]>{
@@ -24,4 +25,16 @@ export class CustomersService {
   getCustomerIDByUsername(username: string): Observable<Customer[]>{
     return this.httpclient.get<Customer[]>(`${this.baseURLUsername}/${username}`)
   }
+
+  patchCustomerPassword(customerId: number, customer: Customer[]): Observable<Customer[]>{
+    console.log(customer)
+    console.log(customerId)
+    console.log(`${this.passwordUrl}/${customerId}`);
+    return this.httpclient.patch<Customer[]>(`${this.passwordUrl}/${customerId}`, customer);
+  }
+
+  updateCustomerPassword(customerId:number, customer: Customer[]): Observable<any[]>{
+    return this.httpclient.put<Customer[]>(`${this.passwordUrl}/${customerId}`, customer);
+  }
+
 }

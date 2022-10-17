@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+
+<div class="d-flex justify-content-center">
+    <div class="profile">
+        <h2><u>Profile Page</u></h2>
+        <h3>First Name: {{customer.firstName}} </h3>
+        <h3>Last Name: {{customer.lastName}} </h3>
+        <h3>Username: {{customer.username}}</h3>
+        <h3>Password: ********</h3>
+        <button (click)= "switchPage()">Change Password</button>
+        <h3>Income: ${{customer.income}}</h3>
+        <button>Update Income</button>
+        <h3>Savings: ${{customer.savings}}</h3>
+        <button>Update Savings</button>
+    </div>
+</div>

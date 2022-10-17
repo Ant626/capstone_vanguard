@@ -10,6 +10,8 @@ import { LoanCalculatorComponent } from './loan-calculator/loan-calculator.compo
 import { SavingsCalculatorComponent } from './savings-calculator/savings-calculator.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PayComponent } from './pay/pay.component';
+import { ProfilePAgeComponent } from './profile-page/profile-page.component';
+import { UpdatePasswordPageComponent } from './update-password-page/update-password-page.component';
 
 
 
@@ -24,7 +26,9 @@ const routes: Routes = [
     {path: 'loan-calculator', component: LoanCalculatorComponent},
     {path: 'savings-calculator', component: SavingsCalculatorComponent},
     {path: 'payments', component:PaymentsPageComponent},
-    {path: 'payBudget/:budgetId', component: PayComponent}
+    {path: 'payBudget/:budgetId', component: PayComponent},
+    {path: 'fundingforce/profilePage', component: ProfilePAgeComponent},
+    {path: 'fundingforce/updatePassword', component: UpdatePasswordPageComponent}
   ];
 
  @NgModule({

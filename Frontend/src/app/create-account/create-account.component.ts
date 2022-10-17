@@ -24,14 +24,16 @@ export class CreateAccountComponent implements OnInit {
     error => console.log(error));
   }
 
-/* goLogInPage(): void{
-    this.apple ='http://localhost:8080/login';
+   goLogInPage(): void{
+    this.router.navigate(['/fundingforce/login']);
   }
- */
+ 
   onSubmit(){
       console.log(this.registration);
+      this.registration.income = 0;
+      this.registration.savings = 0;
       this.saveAccount();
-     /*  this.goLogInPage(); */
+      this.goLogInPage();
   }
 
 }

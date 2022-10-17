@@ -6,4 +6,6 @@ export class Registration {
   firstName!: string;
   lastName!: string;
   email!: string;
+  income!: number;
+  savings!: number;
 }
