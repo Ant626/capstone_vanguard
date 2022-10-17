@@ -1,3 +1,9 @@
 .profile{
     margin-top: 40px;
 }
+
+.background-color{
+    background: linear-gradient(to bottom, rgba(228, 236, 225, 0.637), rgba(11, 217, 148, 0.538));
+    overflow-x: hidden;
+    height: 100vh;
+  }

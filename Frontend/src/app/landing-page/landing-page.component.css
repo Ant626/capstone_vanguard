@@ -25,10 +25,11 @@ nav{
 
 .title {
     font-size: 80px;
-    margin-bottom: 6%;
+    margin-top: 3%;
+    margin-bottom: 2%;
     text-align: center;
     line-height: 1;
-    transform: rotate(-15deg);
+    /* transform: rotate(-15deg); */
 }
 
 .btn{
@@ -36,7 +37,11 @@ nav{
     padding: 12px;
 }
 .background-color{
-  background: linear-gradient(75deg, #D8F3DC, #1B4332);
+  background-image: 
+  linear-gradient(to bottom, rgb(241, 244, 240), rgba(36, 139, 187, 0.424)),
+  url("https://d3eh3svpl1busq.cloudfront.net/tAOzpRnokCscJSkojzPkYGHojfYjiVWq/assets/static/optimized/rev-796a05f/wp-content/uploads/2020/10/Objective-of-Financial-Reporting.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow-x: hidden;
   height: 100vh;
 }

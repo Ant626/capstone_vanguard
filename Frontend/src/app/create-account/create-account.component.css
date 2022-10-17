@@ -1,15 +1,47 @@
 
 .background-color{
-  background: linear-gradient(75deg, #D8F3DC, #1B4332);
+  background: linear-gradient(to bottom, rgba(228, 236, 225, 0.637), rgba(11, 217, 148, 0.538));
   overflow-x: hidden;
   height: 100vh;
 }
 
-h3{
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
 .space{
   margin-left: 5%;
+}
+.container {
+  background-color: #98b6dd36;
+  margin: 10px;
+  padding: 1%;
+  width: 800px;
+  height: 600px;
+  max-width: 1000px;
+  margin: 30px auto;
+  min-height: 300px;
+  border-radius: 1.5%;
+  box-shadow: 5px 10px 15px 1px rgba(30, 69, 198, 0.38); 
+}
+
+#title {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 600;
+  font-size: 45px;
+  margin-top: 2%;
+  letter-spacing: 2px;
+  color: rgb(30, 70, 198);
+  text-transform: uppercase;
+  text-align: center;
+  border: none
+}
+
+.btn {
+  background:rgba(30, 69, 198, 0.816);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  margin-right: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
 }
