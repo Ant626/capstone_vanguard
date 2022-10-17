@@ -45,7 +45,6 @@ export class UserLoginComponent implements OnInit {
       localStorage.setItem("id", Object.values(this.results[0])[0])
       localStorage.setItem("firstName", Object.values(this.results[0])[2])
       if(this.results.length == 1){
-        alert('login successful now work on routing this to home page and storing the data to local.')
         this.saveData("name", this.name);
         this.router.navigate(['/fundingforce/home']);
       }
