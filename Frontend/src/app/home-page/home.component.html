@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Home Page</title>
+</head>
+<body class = "background-color">
+  <app-navbar></app-navbar>
+  <h1 class = "top-Bar">Welcome {{name}}</h1>
+    <br>
+    <br>
+    <div class ="top-Bar">
+  <button type="button" class="btn btn-success me-lg-2" >
+  <a routerLink="/create-budget" routerLinkActive="active" class="nav-link" >Create Budget</a>
+  </button>
+  <button type="button" class="btn btn-success me-lg-2">
+      <a routerLink="/payments" routerLinkActive="active" class="nav-link" >View Budgets</a>
+      </button>
+      </div>
+</body>
+</html>
+
+<div class="container">
+    <router-outlet></router-outlet>
+  </div>

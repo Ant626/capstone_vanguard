@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<div class='background-color' >
+  <h1 class = "top-Bar"> Payment</h1>
+    <div class="row">
+      <a href="/create-budget" class=" btn btn-new" >New</a>
+    </div>
+
+<br>
+
+  <div class="column" >
+      <div class="card border-secondary mb-3 w-75 text-center" *ngFor="let budget of budgets">
+        <div class="card-body">
+          <h5 class="card-title"><u>{{budget.goals}}</u></h5>
+          <table class="table-center">
+  <tr>
+    <th class="table-cell">Last Amount Paid</th>
+    <th class="table-cell">Interest Rate</th>
+    <th class="table-cell">Amount Left</th>
+  </tr>
+  <tr>
+    <td>${{budget.lastAmountPaid}}</td>
+    <td>{{budget.interest}}%</td>
+    <td>${{budget.totalDue}}</td>
+  </tr>
+</table>
+<a (click) = "payBudget(budget.budgetId)" class="btn btn-primary btn-payment">Pay</a>
+<a (click) = "viewBudget(budget.budgetId)" class="btn btn-primary btn-payment">View</a>
+<a (click) = "deleteBudgetByID(budget.budgetId)" class="btn btn-danger btn-payment">Delete</a>
+        </div>
+    </div>
+  </div>
+</div>
+
