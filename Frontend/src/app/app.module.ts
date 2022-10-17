@@ -26,6 +26,8 @@ import { SavingsCalculatorComponent } from './savings-calculator/savings-calcula
 import { NavbarComponent } from './navbar/navbar.component';
 import { PayComponent } from './pay/pay.component';
 import { ProfilePAgeComponent } from './profile-page/profile-page.component';
+import { UpdateIncomePageComponent } from './update-income-page/update-income-page.component';
+import { UpdateSavingsPageComponent } from './update-savings-page/update-savings-page.component';
 
 
 @NgModule({
@@ -44,7 +46,9 @@ import { ProfilePAgeComponent } from './profile-page/profile-page.component';
     UpdatePasswordPageComponent,
     NavbarComponent,
     PayComponent,
-    ProfilePAgeComponent
+    ProfilePAgeComponent,
+    UpdateIncomePageComponent,
+    UpdateSavingsPageComponent
   ],
   imports: [
     BrowserModule,

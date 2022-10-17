@@ -12,6 +12,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PayComponent } from './pay/pay.component';
 import { ProfilePAgeComponent } from './profile-page/profile-page.component';
 import { UpdatePasswordPageComponent } from './update-password-page/update-password-page.component';
+import { UpdateIncomePageComponent } from './update-income-page/update-income-page.component';
+import { UpdateSavingsPageComponent } from './update-savings-page/update-savings-page.component';
 
 
 
@@ -28,7 +30,9 @@ const routes: Routes = [
     {path: 'payments', component:PaymentsPageComponent},
     {path: 'payBudget/:budgetId', component: PayComponent},
     {path: 'fundingforce/profilePage', component: ProfilePAgeComponent},
-    {path: 'fundingforce/updatePassword', component: UpdatePasswordPageComponent}
+    {path: 'fundingforce/updatePassword', component: UpdatePasswordPageComponent},
+    {path: 'fundingforce/updateIncome', component: UpdateIncomePageComponent},
+    {path: 'fundingforce/updateSavings', component: UpdateSavingsPageComponent}
   ];
 
  @NgModule({

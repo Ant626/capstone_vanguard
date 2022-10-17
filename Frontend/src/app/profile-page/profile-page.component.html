@@ -7,10 +7,10 @@
         <h3>Last Name: {{customer.lastName}} </h3>
         <h3>Username: {{customer.username}}</h3>
         <h3>Password: ********</h3>
-        <button (click)= "switchPage()">Change Password</button>
+        <button (click)= "switchPage()" class="btn btn-primary">Change Password</button>
         <h3>Income: ${{customer.income}}</h3>
-        <button>Update Income</button>
+        <button (click)="goToUpdateIncome()"class="btn btn-primary">Update Income</button>
         <h3>Savings: ${{customer.savings}}</h3>
-        <button>Update Savings</button>
+        <button (click)="goToUpdateSavings()" class="btn btn-primary">Update Savings</button>
     </div>
 </div>

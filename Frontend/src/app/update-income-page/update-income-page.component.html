@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+
+<div class="container text-center" >
+    <div class="column">
+    <h4> Enter A New Income</h4>
+    <div class="input-group mb-3">
+        <input [(ngModel)] = "newIncome" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+      </div>
+    
+    <div class="btn">
+        <button  (click)="updateIncome()" type="button" class="btn btn-primary">Update</button>
+        <button (click) ="goBack()" type="button" class="btn btn-danger">Cancel</button>
+    </div>
+</div>
+</div>

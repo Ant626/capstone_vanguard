@@ -28,5 +28,13 @@ export class ProfilePAgeComponent implements OnInit {
     this.router.navigate(['/fundingforce/updatePassword']);
   }
 
+  goToUpdateIncome(){
+    this.router.navigate(['/fundingforce/updateIncome']);
+  }
+
+  goToUpdateSavings(){
+    this.router.navigate(['/fundingforce/updateSavings']);
+  }
+
 
 }
